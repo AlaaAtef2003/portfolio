@@ -4,5 +4,6 @@
   overflow-x: hidden;
   min-height: 100vh; /* لتغطية كامل الشاشة */
   color: #fff;
+  width: 100%;
 }
 
