@@ -1,0 +1,61 @@
+.navbar {
+  background-color: rgba(29, 29, 29, 0.85); /* خلفية غامقة مع شفافية */
+  backdrop-filter: blur(6px); /* تأثير زجاجي */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+  font-size: 1.8rem;
+}
+
+.navbar-brand span {
+  color: #3b82f6; /* النقطة الزرقاء */
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active,
+.nav-link:active  {
+  color: #3b82f6 !important;
+}
+
+.nav-link:hover i,
+.nav-link.active i,
+.nav-link:active i {
+  color: #3b82f6;
+  transform: translateY(-2px); /* حركة خفيفة للأيقونة */
+}
+
+/* underline animation */
+.nav-link:hover::after,
+.nav-link.active::after,
+.nav-link:active::after  {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 60%;
+  height: 2px;
+  background-color: #3b82f6;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}

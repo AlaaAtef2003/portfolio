@@ -1,0 +1,13 @@
+
+ <div *ngFor="let icon of myIcons"
+     class="icon floating"
+     [ngStyle]="{
+       'left.px': icon.left,
+       'color': icon.color,
+       'opacity': icon.opacity,
+       'animation-duration.s': icon.duration,
+       '--start-y': icon.startY + 'px'
+     }">
+  <i [class]="icon.class"></i>
+</div>
+

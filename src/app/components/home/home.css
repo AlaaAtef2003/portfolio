@@ -1,0 +1,66 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.home h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FFD700; /* لون العنوان المتغير */
+  transition: opacity 0.5s; /* fade عند التغيير */
+}
+
+.home p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.home .btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+.shadow-gray {
+  box-shadow: 0 0.5rem 1rem rgba(200, 200, 200, 0.5) !important;
+}
+.icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+  margin-right: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid #333;
+  font-size: 1.5rem;
+}
+
+.icon a:hover {
+  background: linear-gradient(135deg, #1860fc 0%, #00bfff 100%);
+  border-color: #1860fc;
+  transform: translateY(-5px) rotate(360deg);
+  box-shadow: 0 10px 25px rgba(24, 96, 252, 0.5);
+}
+
+.icon a i {
+  transition: transform 0.3s ease;
+}
+
+.icon a:hover i {
+  transform: scale(1.2);
+}
+img{
+  z-index: 100;
+}

@@ -1,0 +1,20 @@
+/* ضع أيقونات فوق section وليس خلفها */
+.icon {
+  position: absolute;
+  font-size: 40px;
+  z-index: 1; /* أعلى من الخلفية */
+  pointer-events: none; /* لا تتداخل مع الضغط على الأزرار */
+}
+
+/* استخدم floatUp animation */
+@keyframes floatUp {
+  0% { transform: translateY(var(--start-y)) scale(1); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-150px) scale(1.2); opacity: 0; }
+}
+
+.floating {
+  animation-name: floatUp;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}

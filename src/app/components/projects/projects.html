@@ -1,0 +1,42 @@
+
+<div class="container text-white p-4 mt-5 rounded-3" style="background-color: rgba(15, 15, 15, 0.9);">
+  <div class="p-4 rounded shadow-sm">
+    <h1 class="text-center mb-3 text-primary">
+      <i class="fa-solid fa-laptop-code"></i> My Projects
+    </h1>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4" *ngFor="let project of myproducts; let i = index">
+        <div class="card h-100 p-3">
+          <p class="text-primary">Project #{{ i + 1 }}</p>
+
+          <div class="img-container mb-3">
+            <img [src]="project.imageUrl"
+                 [alt]="project.title"
+                 class="w-100"
+                 style="height: 200px; object-fit: cover; border-radius: 10px;">
+          </div>
+<app-icons></app-icons>
+          <h3 class="text-white">{{ project.title }}</h3>
+          <p class="text-muted">{{ project.description }}</p>
+
+          <div class="mt-auto d-flex gap-2 justify-content-center">
+            <a *ngIf="project.projectUrl"
+               [href]="project.projectUrl"
+               target="_blank"
+               class="btn btn-dark btn-sm">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a *ngIf="project.liveUrl"
+               [href]="project.liveUrl"
+               target="_blank"
+               class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-globe"></i> Live
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-icons></app-icons>

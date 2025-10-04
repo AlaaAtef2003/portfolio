@@ -1,0 +1,50 @@
+
+/* Container Section */
+.skills-section {
+
+  z-index: 0;
+}
+
+/* Skill Card */
+.category {
+  border: 1px solid #69696971;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #1a1a1a;
+  z-index: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.category h3 {
+  border-bottom: 2px solid #464545ab;
+  padding-bottom: 5px;
+}
+
+/* Grid Spacing */
+.skills-grid {
+  margin-top: 20px;
+}
+
+/* Fade Up Scroll Animation */
+.fade-up-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-up-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger effect */
+.fade-up-scroll:nth-child(1).animate { transition-delay: 0s; }
+.fade-up-scroll:nth-child(2).animate { transition-delay: 0.1s; }
+.fade-up-scroll:nth-child(3).animate { transition-delay: 0.2s; }
+.fade-up-scroll:nth-child(4).animate { transition-delay: 0.3s; }
+.fade-up-scroll:nth-child(5).animate { transition-delay: 0.4s; }

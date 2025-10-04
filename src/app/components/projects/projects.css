@@ -1,0 +1,138 @@
+.card {
+  width: 100%;
+  min-height: 28em;
+  background: #171717;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  z-index: 10;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px rgba(13, 110, 253, 0.3);
+  border-color: #0d6efd;
+  z-index: 100;
+}
+
+.card h3 {
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+  margin: 0.8em 0 0.5em 0;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .text-muted {
+  color: #b0b0b0 !important;
+  font-size: 0.9em;
+  margin: 0.5em 0 1em 0;
+  flex-grow: 1;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+/* تكبير منطقة الصورة */
+.img-container {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  border: 2px solid #2a2a2a;
+  padding: 0.5em;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .img-container img {
+  transform: scale(1.05);
+  z-index: 100;
+}
+
+/* Project number badge */
+.text-success {
+  background: rgba(25, 135, 84, 0.2);
+  color: #198754 !important;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+/* Buttons */
+.share, .d-flex.gap-2 {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  padding-top: 1em;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 0.9em;
+  padding: 0.6em 1.2em;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-dark {
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+
+.btn-dark:hover {
+  background: #1a1a1a;
+  border-color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
+}
+
+/* Skills title styling */
+.skills-title, .text-primary {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.text-primary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border-radius: 2px;
+}
+
+/* Total projects counter */
+.text-warning {
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

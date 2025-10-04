@@ -1,0 +1,87 @@
+<div class="container  align-items-center  text-white p-4 rounded-3" style="background-color: rgba(15, 15, 15, 0.877);">
+
+<div class="  p-4 rounded shadow-sm d-flex flex-column align-items-center">
+   <h1 class="text-center mb-2 skills-title">
+    <i class="fa-solid fa-laptop-code text-primary"></i> My Skills
+  </h1>
+  <p class="text-center  text-white MB-1 skills-description">
+    A comprehensive overview of my technical expertise and proficiency across various domains
+  </p>
+
+
+  <div class="row g-4 skills-grid">
+
+    <!-- Web Development -->
+    <div class="col-md-6 col-lg-4">
+          <div class="category fade-up-loop card h-100 text-center text-white " >
+        <div class="card-body">
+          <h3 class="card-title"><i class="fa-solid fa-globe me-2 text-info"></i> Web Development</h3>
+          <div class="d-flex flex-wrap mt-3">
+            <span *ngFor="let skill of webDevelopment" class="badge bg-secondary text-white me-2 mb-2">
+              {{skill}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="col-md-6 col-lg-4">
+          <div class="category fade-up-loop card h-100 text-center text-white " >
+        <div class="card-body">
+          <h3 class="card-title"><i class="fa-solid fa-code me-2 text-warning"></i> Programming Languages</h3>
+          <div class="d-flex flex-wrap mt-3">
+            <span *ngFor="let skill of programmingLanguages" class="badge bg-secondary text-white me-2 mb-2">
+              {{skill}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Embedded Systems -->
+          <div class="col-md-6 col-lg-4">
+          <div class="category fade-up-loop card h-100 text-center text-white " >
+       <div class="card-body">
+          <h3 class="card-title"><i class="fa-solid fa-microchip me-2 text-success"></i> Embedded Systems & Low-Level Programming</h3>
+          <div class="d-flex flex-wrap mt-3">
+            <span *ngFor="let skill of embeddedSystems" class="badge bg-secondary text-white me-2 mb-2">
+              {{skill}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Concepts -->
+    <div class="col-md-6 col-lg-4">
+          <div class="category fade-up-loop card h-100 text-center text-white " >
+        <div class="card-body">
+          <h3 class="card-title"><i class="fa-solid fa-lightbulb me-2 text-primary"></i> Programming Concepts</h3>
+          <div class="d-flex flex-wrap mt-3">
+            <span *ngFor="let skill of programmingConcepts" class="badge bg-secondary text-white me-2 mb-2">
+              {{skill}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software & Tools -->
+    <div class="col-md-6 col-lg-4">
+          <div class="category fade-up-loop card h-100 text-center text-white " >
+       <div class="card-body">
+          <h3 class="card-title"><i class="fa-solid fa-toolbox me-2 text-danger"></i> Software & Tools</h3>
+          <div class="d-flex flex-wrap mt-3">
+            <span *ngFor="let skill of softwareTools" class="badge bg-secondary text-white me-2 mb-2">
+              {{skill}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<app-icons></app-icons>

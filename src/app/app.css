@@ -1,0 +1,7 @@
+:host {
+  display: block;
+  background-color: #2c2b2c;
+  min-height: 100vh; /* لتغطية كامل الشاشة */
+  color: #fff;
+}
+
