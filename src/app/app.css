@@ -1,9 +1,18 @@
 :host {
   display: block;
   background-color: #2c2b2c;
-  overflow-x: hidden;
-  min-height: 100vh; /* لتغطية كامل الشاشة */
+  overflow-x: hidden; 
+  min-height: 100vh;  
   color: #fff;
   width: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+* {
+  box-sizing: border-box; 
+}
