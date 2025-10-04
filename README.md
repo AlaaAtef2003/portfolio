@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Portfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
@@ -61,4 +60,4 @@ For more information on using the Angular CLI, including detailed command refere
 =======
 # portfolio
 My personal portfolio
->>>>>>> 8ee22a4bf1159bb993132e406852a5fcee34731f
+
