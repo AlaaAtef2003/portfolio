@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
@@ -49,9 +48,5 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.2"
-=======
-  "dependencies": {
-    "bootstrap": "^5.3.8"
->>>>>>> 8ee22a4bf1159bb993132e406852a5fcee34731f
   }
 }
