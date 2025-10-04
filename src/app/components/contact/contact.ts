@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./contact.css']
 })
 export class Contact {
-
+recaptchaSiteKey = '6LeCJd4rAAAAAA_N5V5ittiJaUDnV-wzYST42JRn';
 }
