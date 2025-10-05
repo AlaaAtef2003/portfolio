@@ -20,7 +20,7 @@ export class ProjectsComponent {
         description: "A collection of fun browser games including Snake, Rock Paper Scissors, Tic Tac Toe, and Memory Cards.",
         imageUrl: "assets/gamezone.PNG",  // ← الصور الحقيقية
         projectUrl: "https://github.com/AlaaAtef2003/gamezone-browser-games",
-        liveUrl: "https://alaaatefimgs2003.github.io/gamezone-browser-games/index.html"
+        liveUrl: "https://alaaatef2003.github.io/gamezone-browser-games/index.html"
       },
       {
         title: "FlameHouse",
